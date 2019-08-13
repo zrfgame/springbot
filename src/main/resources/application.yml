@@ -1,0 +1,19 @@
+spring:
+  profiles:
+   active: dev
+  thymeleaf:
+    prefix: classpath:/templates/  
+    suffix: .html
+    encoding: UTF-8 
+    mode: LEGACYHTML5
+      
+      
+#配置放行的目录和方法
+security:
+  ignored: /api/*,/css/*,/js/*,/images/*,/fonts/*,/font-awesome/*
+
+ 
+#配置mybatis的扫描的包的文件的入口
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
